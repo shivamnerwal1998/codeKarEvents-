@@ -23,11 +23,7 @@ int main() {
         int minimumGifts = 0 ;
         for(i=0 ; i<= minSat-1 ; i++)
             minimumGifts += sat[i] ;
-        cout<< minimumGifts ;
-
-
-
-
+        cout<< minimumGifts <<endl ;
     }
 
     return 0;
