@@ -1,0 +1,37 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int adveta = 100 , stepsA =  0  ;
+int rahul = 120 , stepsR = 0 ;
+int jaanki = 80 , stepsJ = 0   ;
+int day ;
+cin >> day ;
+for(int i =2 ; i <=day ; i++)
+{
+    stepsA = 100 + (10 * (i - 1 )) ; 
+    stepsR = 120 + ( 5 * (i - 1) ) ;
+    stepsJ =  80 + ( 20 * (i - 1 ) ) ;  
+    
+    adveta += stepsA ;
+    rahul += stepsR ; 
+    jaanki += stepsJ ;
+    
+    stepsA = 0 ;
+    stepsR = 0 ;
+    stepsJ = 0 ; 
+    
+
+
+}
+cout << adveta << endl ;
+cout << rahul << endl ;
+cout << jaanki  ; 
+   
+    return 0;
+}
