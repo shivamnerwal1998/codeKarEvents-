@@ -1,0 +1,14 @@
+given = input()
+l = str()
+for i in given :
+    if( i.isupper() ) :
+        char = i.lower()
+        l = l + "_"
+        l = l + char 
+    else :
+        l = l + i
+    
+print( l )
+        
+       
+    
