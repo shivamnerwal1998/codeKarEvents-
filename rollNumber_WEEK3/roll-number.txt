@@ -1,0 +1,40 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+void suzyKoDhundo(int room , int limit[] , int rollNo)
+{
+    for( int i = 0 ; i<= room-1 ; i++ )
+    {
+        if( limit[i] >= rollNo )
+        {
+            cout<< (i+1) << endl ; 
+            break ; 
+        }
+        rollNo -= limit[i] ;  
+        
+    }
+    
+    
+}
+
+int main() {
+    int room ;
+    cin >> room ;
+    int limit[room] ; 
+    for(int i = 0 ; i <= room-1 ; i++)
+        cin >> limit[i] ;
+    int num ;
+    cin >> num ; 
+    while( num >= 1  )
+    {
+        --num ; 
+        int rollNo ;
+        cin >> rollNo ; 
+        suzyKoDhundo(room ,limit ,rollNo) ; 
+    }
+    return 0;
+}
